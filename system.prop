@@ -60,14 +60,14 @@ persist.mot.usb.mediasync = 0
 ro.ngp_available=1
 ro.modem_available=0
 persist.usb.android_config=0
-#ro.usb.use_custom_service=1
+ro.usb.use_custom_service=1
 persist.sys.usb.config=mass_storage,adb
 ro.default_usb_mode=2
 ro.mot.master_clear.shredsd=false
 
 ro.mot.buttonlight.timeout=1
 persist.mot.proximity.touch=1
-mot.proximity.delay=450
+mot.proximity.delay=90
 mot.proximity.distance=60
 
 
@@ -104,6 +104,8 @@ ro.media.panorama.frameres=1280x720
 ro.product.use_charge_counter=1
 ro.max.fling_velocity=4000
 debug.enabletr=false
+debug.egl.callstack=1
+hwui.render_dirty_regions=false
 
-# force enable or force disable of hw renderer for the listed processes
+# Force disable of hw renderer for the listed processes
 hwui.blacklist=com.android.vending:com.tmobile.themechooser:com.bel.android.dspmanager:com.android.mms:mobi.mgeek.TunnyBrowser:com.android.wallpaper.livepicker
