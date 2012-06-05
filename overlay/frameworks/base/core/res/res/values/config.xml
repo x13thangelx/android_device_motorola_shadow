@@ -83,7 +83,7 @@
         <item>100</item>
         <item>3000</item>
         <item>8000</item>
-        <item>7999</item>
+        <item>8000</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -251,4 +251,7 @@
 
     <!-- The default iface on which to monitor data use -->
     <string name="config_datause_iface">ppp0</string>
+
+    <!-- Default network policy warning threshold, in megabytes. -->
+    <integer name="config_networkPolicyDefaultWarning">-1</integer>
 </resources>
