@@ -28,10 +28,10 @@
     <integer name="config_notificationsBatteryFullARGB">0x00000000</integer>
 
     <!-- Default LED on time for notification LED in milliseconds. -->
-    <integer name="config_defaultNotificationLedOn">500</integer>
+    <integer name="config_defaultNotificationLedOn">1000</integer>
 
     <!-- Default LED off time for notification LED in milliseconds. -->
-    <integer name="config_defaultNotificationLedOff">2000</integer>
+    <integer name="config_defaultNotificationLedOff">9000</integer>
 
     <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
     <integer-array name="config_keyboardTapVibePattern">
@@ -151,7 +151,7 @@
         <item>"mobile_fota,10,0,2,60000,true"</item>
         <item>"mobile_ims,11,0,2,60000,true"</item>
         <item>"mobile_cbs,12,0,2,60000,true"</item>
-        <item>"wifi_p2p,13,1,0,-1,true"</item>
+        <item>"wifi_p2p,13,1,0,-1,false"</item>
     </string-array>
 
     <!-- An Array of "[ConnectivityManager connectionType],
@@ -254,4 +254,6 @@
 
     <!-- Default network policy warning threshold, in megabytes. -->
     <integer name="config_networkPolicyDefaultWarning">-1</integer>
+
+    <integer name="config_screenOnAnimation">0</integer>
 </resources>
