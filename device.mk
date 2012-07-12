@@ -23,7 +23,7 @@ DEVICE_PACKAGE_OVERLAYS := device/motorola/shadow/overlay
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES := \
-	frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml 
+frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
 $(call inherit-product, device/motorola/omap34com/device.mk)
 $(call inherit-product-if-exists, vendor/motorola/shadow/shadow-vendor.mk)

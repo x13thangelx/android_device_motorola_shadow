@@ -34,14 +34,15 @@ COMMON_GLOBAL_CFLAGS += -DBOARD_USES_AUDIO_LEGACY
 endif
 TARGET_PROVIDES_LIBAUDIO := true
 
-# Camera
-BOARD_OVERLAY_BASED_CAMERA_HAL := true
-
 # Recovery
 TARGET_PREBUILT_RECOVERY_KERNEL := device/motorola/shadow/kernel
 BOARD_MKE2FS := device/motorola/omap34com/releaseutils/mke2fs
 
 TARGET_PROVIDES_INIT_RC := true
+
+#HIJACK
+TARGET_HIJACK_ZIPPER := device/motorola/shadow/prebuilt/etc/hijack-boot/pack-newboot.sh
+
 
 # UMS
 BOARD_MASS_STORAGE_FILE_PATH := "/sys/devices/platform/usb_mass_storage/lun0/file"

@@ -23,6 +23,8 @@
 
 # Device overlay and prebuilt directories
 DEVICE_PREBUILT := device/motorola/shadow/prebuilt
+DEVICE_PACKAGE_OVERLAYS := device/motorola/shadow/overlay
+
 
 # Audio + Bluetooth
 PRODUCT_COPY_FILES += \
@@ -78,3 +80,4 @@ PRODUCT_NAME := full_shadow
 PRODUCT_DEVICE := shadow
 PRODUCT_BRAND := verizon
 PRODUCT_MODEL := DROIDX
+PRODUCT_MANUFACTURER := Motorola
